@@ -1,0 +1,16 @@
+Column_Name,Description,Data_Type,Derived_Column
+Order_ID,Unique/order identifier assigned to a transaction record.,Text (String),No
+Order_Date,Date on which the order was recorded.,Datetime,No
+Customer_ID,Identifier for the customer.,Text (String),No
+Customer_Name,Customer label/name in the dataset.,Text (String),No
+Age,Customer age in years; missing values were filled using the dataset median.,Numeric (Float),No
+Gender,Customer gender category.,Categorical (Text),No
+City,Customer city; missing entries were filled with 'Unknown'.,Categorical (Text),No
+Product,Product purchased in the transaction.,Categorical (Text),No
+Category,Product category grouping.,Categorical (Text),No
+Quantity,Number of units purchased.,Numeric (Integer),No
+Unit_Price,Price per unit of the product.,Numeric (Float),No
+Total_Sales,Total sales amount for the transaction (Quantity × Unit_Price).,Numeric (Float),No
+Calculated_Sales,Sales value recalculated as Quantity multiplied by Unit_Price.,Numeric (Float),Yes
+Sales_Difference,"Difference between Total_Sales and Calculated_Sales, rounded to 2 decimal places.",Numeric (Float),Yes
+Customer_Age_Group,"Customer age grouped into categories: 18–25, 26–35, 36–45, 46–55, and 56–65.",Categorical (Text),Yes
